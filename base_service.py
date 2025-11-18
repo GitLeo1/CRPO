@@ -41,20 +41,6 @@ class BaseRepository:
             return "".join([x for x in out if isinstance(x, str)])
         return str(out)
 
-    def llm_gpt_o4(self,
-        user_input: str = "",
-    ) -> str:
-        kwargs = {
-            "model": "o4-mini",
-            "messages": [{
-            "role": "user",
-            "content": [{"type": "text", "text": user_input}]
-        }],
-        }
-
-        resp = self.client.chat.completions.create(**kwargs)
-        return resp.choices[0].message.content
-
     def read_jsonl(self,jsonl_path):
         rows = []
         with open(jsonl_path, "r", encoding="utf-8") as f:
