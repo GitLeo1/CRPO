@@ -18,7 +18,7 @@ class BaseRepository:
             {"role": "user", "content": user_input}
         ]
         response = openai.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-4o",
             messages=messages,
             temperature=0,
             response_format=response_format
