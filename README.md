@@ -27,7 +27,7 @@ CRPO then applies two complementary strategies: (1) tiered contrastive reasoning
 
 1) Clone the repository<br>
 ```bash
-git clone https://github.com/GitLeo1/better_by_comparison.git
+git clone https://github.com/GitLeo1/CRPO.git
 ```
 ---
 
